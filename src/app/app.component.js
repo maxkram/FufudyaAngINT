@@ -6,16 +6,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
+var product_service_1 = require("./products/product.service");
 var AppComponent = (function () {
     function AppComponent() {
-        this.pageTitle = "\u0424\u0443\u0444\u0430\u0434\u044C\u044F \u0418\u043D\u0442\u0435\u0440\u043F\u0440\u0430\u0439\u0437";
+        this.pageTitle = "\u0421\u043A\u043E\u0431\u044F\u043D\u044B\u0435 \u0438\u0437\u0434\u0435\u043B\u0438\u044F";
     }
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
         selector: 'pm-app',
-        template: " \n    <div><h1>{{pageTitle}}</h1>\n        <pm-products></pm-products>\n    </div>\n    "
+        template: " \n    <div><h1>{{pageTitle}}</h1>\n        <pm-products></pm-products>\n    </div>\n    ",
+        providers: [product_service_1.ProductService]
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
