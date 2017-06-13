@@ -20,7 +20,6 @@ import { ProductService } from "./products/product.service";
         </div>
     </div>
     `,
-    providers: [ProductService]
 })
 export class AppComponent {
     pageTitle: string = `Скобяные изделия`;
